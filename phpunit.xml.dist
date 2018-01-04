@@ -1,0 +1,23 @@
+<phpunit
+    bootstrap="tests/bootstrap.php"
+    backupGlobals="false"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    >
+    <php>
+        <const name="NonceTest\DB_USER" value="DB_USER" />
+        <const name="NonceTest\DB_NAME" value="DB_NAME" />
+        <const name="NonceTest\DB_PASSWORD" value="DB_PASSWORD" />
+        <const name="NonceTest\DB_HOST" value="localhost" />
+        <const name="NonceTest\DB_CHARSET" value="utf8" />
+        <const name="NonceTest\DB_COLLATE" value="" />
+        <const name="NonceTest\DB_TABLE_PREFIX" value="TABLE_PREFIX" />
+    </php>
+    <testsuites>
+        <testsuite name="NonceTests">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
